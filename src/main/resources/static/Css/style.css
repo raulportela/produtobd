@@ -1,0 +1,116 @@
+
+.box{
+  border: 1px solid #191919;
+  background: #f0f0f0;
+  width: 1000px ;
+  height: auto;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.header-model-modal, .body-model-modal, .footer-model-modal{
+  border: solid 1px #191919;
+}
+.boxExclusao{
+  background: #55efc4;
+}
+.header-model-modal{
+  width: auto;
+  padding: 5px;
+  height: 25px;
+  background: #bdc3c7;
+}
+.header-model-modal label{
+  color: #fff;
+  margin: none;
+}
+.body-model-modal label{
+  color: #191919;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.body-model-modal{
+  height: 200px;
+  background: #fff;
+}
+.footer-model-modal{
+  height: 50px;
+  background: #ecf0f1;
+}
+
+input[type="radio"]{
+  margin: 10px;
+}
+
+input[type="checkbox"]{
+  margin: 10px;
+}
+input[type="checkbox"]:nth-child(1){
+  margin-left: 0px;
+}
+input[type="radio"]:nth-child(1){
+  margin-left: 0px;
+}
+
+.botaoCinza{
+  background: #bdc3c7;
+  color: #FFF;
+  border: solid #000000 1px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.botaoAmarelo{
+  background: #ffb025;
+  color: #FFF;
+  border: solid #000000 1px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.botaoVerde{
+  background: #2ecc71;
+  color: #FFF;
+  border: solid #000000 1px;
+  border-radius: 8px;
+  margin: 10px;
+}
+h1{
+  font-size: 20px;
+}
+
+.botaoAzul{
+  background: #3498db;
+  color: #FFF;
+  border: solid #000000 1px;
+  border-radius: 8px;
+  margin: 10px;
+}
+td{
+  width:40px;
+	height:40px;
+	padding:10px;
+  color: #191919;
+}
+
+th, td{
+  border: solid #000 1px;
+}
+th{
+  color: #FFF;
+  padding: 5px;
+  margin: 5px;
+  background: #191919;
+}
+
+table{
+  width: 100% auto;
+  border: solid 1px #191919;
+}
