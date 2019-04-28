@@ -19,8 +19,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class Produto {
 
     @GetMapping("/gerenciamento")
-    public ModelAndView home() {
+    public ModelAndView gerenciamento() {
         ModelAndView mv = new ModelAndView("/1A");
+        return mv;
+    }
+    @GetMapping("/inclAlt")
+    public ModelAndView inclusaoAlteracao() {
+        ModelAndView mv = new ModelAndView("/2A");
         return mv;
     }
 }
