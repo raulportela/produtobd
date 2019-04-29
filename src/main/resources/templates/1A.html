@@ -8,10 +8,10 @@
                 <div class="box">
                     <div class="col">
                         <h1>Gerenciamento de Produtos</h1>
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert alert-success" role="alert" th:if="${produtoExcluido == 1}">
                             <label class="col-form-label">Produto 1 excluido com sucesso!</label>
                         </div>
-                        <div class="alert alert-danger" role="alert">
+                        <div class="alert alert-danger" role="alert" th:if="${produtoAdicionado == 1}">
                             <label class="col-form-label">Erro ao excluir Produto 1!</label>
                         </div>
                         <table class="table">
