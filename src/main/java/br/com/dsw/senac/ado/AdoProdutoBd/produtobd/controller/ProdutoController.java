@@ -1,4 +1,4 @@
-package br.com.dsw.senac.ado.AdoProdutoBd.produtobd;
+package br.com.dsw.senac.ado.AdoProdutoBd.produtobd.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 @RequestMapping("/mv/produto")
-public class Produto {
+public class ProdutoController {
 
     @GetMapping("/gerenciamento")
     public ModelAndView gerenciamento() {
