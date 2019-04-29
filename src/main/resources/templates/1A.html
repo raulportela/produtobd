@@ -28,21 +28,31 @@
                                     <td>1</td>
                                     <td>Produto 1</td>
                                     <td>Disponivel</td>
-                                    <td><button class="botaoAzul" value="Editar">Editar</button><button class="botaoAmarelo"th:data-toggle="@{/modal}" th:data-target="@{/#exampleModal}" value="Remover">Remover</button></td>
+                                    <td>
+                                        <form>
+                                            <input type="button" class="botaoAzul" value="Editar">
+                                            <input type="button" class="botaoAmarelo" th:data-toggle="@{/modal}" th:data-target="@{/#exampleModal}" value="Remover">
+                                        </form>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="row">
                         <div class="col-3">
-                            <button class="botaoVerde">Adicionar Novo</button>
+                            <form>
+                                <a th:href="@{/mv/produto/inclAlt}">
+                                    <input type="button" class="botaoVerde" value="Adicionar novo">
+                                </a>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" th:id="@{/exampleModal}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header header-model-modal">

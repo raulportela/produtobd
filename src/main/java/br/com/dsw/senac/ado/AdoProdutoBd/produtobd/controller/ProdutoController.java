@@ -1,8 +1,5 @@
 package br.com.dsw.senac.ado.AdoProdutoBd.produtobd.controller;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -26,7 +23,7 @@ public class ProdutoController {
     
     @ModelAttribute
     @GetMapping("/gerenciamento")
-    public ModelAndView gerenciamento(RedirectAttributes ra) {
+    public ModelAndView gerenciamento() {
         
         ModelAndView mv = new ModelAndView("/1A");
         mensagemExclusao();
