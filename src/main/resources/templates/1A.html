@@ -31,7 +31,9 @@
                                     <td>
                                         <form>
                                             <input type="button" class="botaoAzul" value="Editar">
-                                            <input type="button" class="botaoAmarelo" th:data-toggle="@{/modal}" th:data-target="@{/#exampleModal}" value="Remover">
+                                            <a href="" >
+                                                <input type="button" class="botaoAmarelo"data-toggle="modal" data-target="#exampleModal}"  value="Remover">
+                                            </a>
                                         </form>
                                     </td>
                                 </tr>
@@ -45,14 +47,14 @@
                                     <input type="button" class="botaoVerde" value="Adicionar novo">
                                 </a>
                             </form>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="modal fade" th:id="@{/exampleModal}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header header-model-modal">
